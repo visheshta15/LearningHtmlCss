@@ -1,0 +1,78 @@
+/* The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. */
+
+.div1 img{
+    float: right;
+    border: 1px solid teal;
+}
+
+.div1 p {
+    /* margin: 70px; */
+    /* float: right; */
+    border: 1px solid teal;
+    padding: 20px;
+    height: 150px;
+    width: 50%;
+}
+
+.header{
+    border: 1px solid red;
+    background-color: antiquewhite;
+}
+
+.header h1{
+    border: 1px solid blue;
+    float: left;
+}
+.header nav {
+    border: 1px solid blue;
+    float: right;
+    margin-top: 30px;
+}
+.clear {
+    clear: both;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+footer{
+    background-color: aquamarine;
+    height: 50px;
+}
+
+footer p {
+    float: right;
+}
+
+article{
+    background-color: burlywood;
+    
+}
+
+.left{
+    border: 1px solid blue;
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+
+}
+.right{
+    float: right;
+    width: 30%;
+}
+
+article::after, .left::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left h1{
+    float: left;
+}
+.left img{
+    width: 50px;
+}

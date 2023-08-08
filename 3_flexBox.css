@@ -1,0 +1,55 @@
+/* h4:nth-child(even){
+    background-color: chartreuse;
+}
+h4:nth-child(odd){
+    background-color: blueviolet;
+} */
+h4:nth-child(2n){
+    background-color: tomato;
+}
+h4:nth-child(2n+1){
+    background-color: fuchsia;
+}
+
+h4{
+     /* defaults */
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto; */
+
+    /* flex: 1; */
+    flex-basis: 500px;
+    /* dynamically adjust width in container */
+    flex-shrink: 1;
+}
+
+
+.div1{
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(237, 231, 231);
+    /* gap: 50px; */
+}
+.h4a{
+    height: 100px;
+    order: 1;
+}
+.h41{
+    background-color: aqua !important;
+    align-self: flex-start;
+    /* flex: 1; */
+}
+.h42{
+    background-color: green !important;
+    align-self: flex-end;
+    order: 2;
+}
+.h43{
+    background-color: pink !important;
+    align-self: stretch;
+    /* move to front */
+    order: -1;
+}

@@ -1,0 +1,32 @@
+/* A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element 
+
+PE are the elements that dont exist in html but we can still select and style in css
+*/
+
+h1::after{
+    content: '😉';
+}
+h1::before{
+    content: '💔';
+}
+
+p::first-line{
+    color: teal;
+}
+p::first-letter{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+p::selection{
+    background: black;
+    color: wheat;
+}
+
+li::marker{
+    color: red;
+}

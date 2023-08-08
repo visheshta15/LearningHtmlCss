@@ -1,0 +1,8 @@
+/* A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s)  */
+li:nth-child(2){
+    font-weight: bold;
+}
+
+li:hover{
+    color: blueviolet;
+}
